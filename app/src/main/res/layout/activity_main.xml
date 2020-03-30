@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textLabelWantToConvert"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/text_want_convert"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.119"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.091" />
+
+    <EditText
+        android:id="@+id/editAmountToConvert2"
+        android:layout_width="124dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        app:layout_constraintStart_toStartOf="@+id/textBalance"
+        app:layout_constraintTop_toBottomOf="@+id/textBalance" />
+
+    <TextView
+        android:id="@+id/textBalance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/text_balance"
+        app:layout_constraintStart_toStartOf="@+id/spConvertTo"
+        app:layout_constraintTop_toBottomOf="@+id/spConvertTo" />
+
+    <TextView
+        android:id="@+id/textWantConvertTo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/text_want_convert_to"
+        app:layout_constraintStart_toStartOf="@+id/spConvertFrom"
+        app:layout_constraintTop_toBottomOf="@+id/spConvertFrom" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="348dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/button_convert"
+        app:layout_constraintStart_toStartOf="@+id/editAmountToConvert2"
+        app:layout_constraintTop_toBottomOf="@+id/editAmountToConvert2" />
+
+    <EditText
+        android:id="@+id/editAmountToConvert"
+        android:layout_width="124dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        app:layout_constraintStart_toStartOf="@+id/textLabelWantToConvert"
+        app:layout_constraintTop_toBottomOf="@+id/textLabelWantToConvert" />
+
+    <TextView
+        android:id="@+id/textWantConvertFrom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/text_want_convert_from"
+        app:layout_constraintStart_toStartOf="@+id/editAmountToConvert"
+        app:layout_constraintTop_toBottomOf="@+id/editAmountToConvert" />
+
+    <Spinner
+        android:id="@+id/spConvertFrom"
+        android:layout_width="348dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:entries="@array/currencies"
+        android:spinnerMode="dropdown"
+        app:layout_constraintStart_toStartOf="@+id/textWantConvertFrom"
+        app:layout_constraintTop_toBottomOf="@+id/textWantConvertFrom" />
+
+    <Spinner
+        android:id="@+id/spConvertTo"
+        android:layout_width="348dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:entries="@array/currencies"
+        android:spinnerMode="dropdown"
+        app:layout_constraintStart_toStartOf="@+id/textWantConvertTo"
+        app:layout_constraintTop_toBottomOf="@+id/textWantConvertTo" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Conversor de Moedas</string>
+    <string name="button_convert">Converter</string>
+    <string name="text_balance">Valor Total</string>
+    <string name="text_want_convert">Quero Converter</string>
+    <string name="text_want_convert_from">De</string>
+    <string name="text_want_convert_to">Para</string>
+    <string-array name="currencies">
+        <item>Dólar Americano</item>
+        <item>Real Brasileiro</item>
+        <item>Euro</item>
+        <item>Libra Esterlina</item>
+        <item>Franco Suíço</item>
+        <item>Peso</item>
+        <item>Iene</item>
+        <item>Dólar Canadense</item>
+    </string-array>
+</resources>
